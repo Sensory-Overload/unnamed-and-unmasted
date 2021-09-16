@@ -1,2 +1,2 @@
 # Out-Of-Ammo
-A Pixel Art 2D Top-Down Roguelike Bullet-Hell Shooter (mout
+A Pixel Art 2D Top-Down Roguelike Bullet-Hell Shooter made by people who dont know what they're doing 
