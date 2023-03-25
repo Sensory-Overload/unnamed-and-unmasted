@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8s6ivo2ccd5u"]
+
+[ext_resource type="Script" path="res://unnamed-and-unmasted/temp/CharacterController/Top Down/top_down.gd" id="1_81efn"]
+[ext_resource type="Texture2D" uid="uid://bjvkvi5ll55yx" path="res://icon.svg" id="2_wttu7"]
+[ext_resource type="Script" path="res://unnamed-and-unmasted/temp/CharacterController/Top Down/Top_Down_Camera.gd" id="3_lsfgl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qkecx"]
+size = Vector2(118, 124)
+
+[node name="Basic" type="CharacterBody2D"]
+script = ExtResource("1_81efn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_wttu7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_qkecx")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+editor_draw_limits = true
+editor_draw_drag_margin = true
+script = ExtResource("3_lsfgl")
